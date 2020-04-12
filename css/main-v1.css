@@ -212,6 +212,7 @@ input[type=button]:active
     border: 1px solid var(--color-surface);
     border-radius: .25rem;
     margin: 1rem;
+    padding: 1rem;
 }
 
 .featured h1::before,
