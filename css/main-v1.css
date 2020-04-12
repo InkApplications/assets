@@ -28,21 +28,26 @@ html
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
-section h1, 
-section h2, 
-section h3
+body
+{
+    padding: 2rem;
+}
+
+h1, 
+h2, 
+h3
 {
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: .75rem;
 }
-section h1 
+h1 
 {
     font-size: 1.5rem;  
 }
-section h2 
+h2 
 {
     font-size: 1.25rem;  
 }
@@ -60,31 +65,39 @@ section h3::before
     content: "### "
 }
 
+body > header,
+header
+{
+    margin-bottom: 1rem;
+}
+
+section,
 article
 {
-    padding: .5rem
+    margin: 2rem 0;
 }
 
 header > p 
 {
     font-style: italic;
 }
-header, section 
-{
-    padding: 16px 32px;
-}
 p 
 {
-    margin: 8px 0;
+    margin: .5rem 0;
 }
 a 
 {
     text-decoration: none;
     color: var(--color-accent);
 }
-ul 
+ul,
+ol
 {
-    margin: 8px 32px;
+    margin: .5rem 2rem;
+}
+li
+{
+    line-height: 1.25rem;
 }
 ul > li::before 
 {
@@ -100,8 +113,8 @@ code,
 code.grouped > span
 {
     background-color: var(--color-surface);
-    border-radius: 4px;
-    padding: 2px;
+    border-radius: .25rem;
+    padding: .125rem;
 }
 code.grouped > span
 {
@@ -222,7 +235,7 @@ input[type=button]:active
 
 @media(max-width: 800px) {
     code.grouped {
-        padding: 8px 0;
+        padding: .5rem 0;
         display: flex;
         flex-wrap: wrap;
     }
