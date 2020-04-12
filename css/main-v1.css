@@ -87,7 +87,7 @@ header > p
 p 
 {
     margin: .5rem 0;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 a 
 {
@@ -121,7 +121,7 @@ ol
 }
 li
 {
-    line-height: 1.25rem;
+    line-height: 1.75rem;
 }
 ul > li::before 
 {
