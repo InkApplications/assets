@@ -1,5 +1,7 @@
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500");
+@import url("atom-one-light.css") (prefers-color-scheme:light);
+@import url("atom-one-dark.css") (prefers-color-scheme:dark);
 
 :root 
 {
@@ -15,8 +17,8 @@
     {
         --color-foreground: #fff;
         --color-background: #212121;
-        --color-surface: #424242;
-        --color-subtle: #323232;
+        --color-surface: #323232;
+        --color-subtle: #2b2b2b;
     }
 }
 
@@ -84,12 +86,33 @@ header > p
 p 
 {
     margin: .5rem 0;
+    line-height: 1.25rem;
 }
 a 
 {
     text-decoration: none;
     color: var(--color-accent);
 }
+section > a[href^="#"],
+article > a[href^="#"],
+header > a[href^="#"]
+{
+    color: var(--color-foreground);
+    border: none;
+}
+section > a[href^="#"]:hover,
+article > a[href^="#"]:hover,
+header > a[href^="#"]:hover
+{
+    cursor: default;
+}
+section > a[href^="#"]:focus,
+article > a[href^="#"]:focus,
+header > a[href^="#"]:focus
+{
+    outline: none;
+}
+
 ul,
 ol
 {
@@ -108,12 +131,19 @@ pre > code
 {
     display: block;
     line-height: 1.25rem;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
 }
+.hljs,
 code,
 code.grouped > span
 {
     background-color: var(--color-surface);
     border-radius: .25rem;
+}
+code,
+code.grouped > span
+{
     padding: .125rem;
 }
 code.grouped > span
