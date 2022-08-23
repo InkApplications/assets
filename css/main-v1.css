@@ -10,6 +10,7 @@
     --color-background: #F8F8F8;
     --color-surface: #fff;
     --color-surface-depressed: #e0e0e0;
+    --color-surface-item: #e0e0e0;
     --color-surface-hover: #F5F5F5;
 
     --color-accent: #008DA9;
@@ -23,6 +24,7 @@
         --color-background: #212121;
         --color-surface: #323232;
         --color-surface-depressed: #2c2c2c;
+        --color-surface-item: #2c2c2c;
         --color-surface-hover: #393939;
     }
 }
@@ -147,7 +149,7 @@ pre > code
 code,
 code.grouped > span
 {
-    background-color: var(--color-surface);
+    background-color: var(--color-surface-item);
     border-radius: .25rem;
 }
 code,
