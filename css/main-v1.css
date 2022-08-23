@@ -6,11 +6,11 @@
 :root 
 {
     --color-foreground: #212121;
-    --color-foreground-subtle: #757575;
+    --color-foreground-subtle: #9E9E9E;
     --color-background: #F8F8F8;
     --color-surface: #fff;
     --color-surface-depressed: #e0e0e0;
-    --color-surface-item: #e0e0e0;
+    --color-surface-item: #f5f5f5;
     --color-surface-hover: #F5F5F5;
 
     --color-accent: #008DA9;
@@ -20,11 +20,11 @@
     :root
     {
         --color-foreground: #fff;
-        --color-foreground-subtle: #e0e0e0;
+        --color-foreground-subtle: #bdbdbd;
         --color-background: #212121;
         --color-surface: #323232;
         --color-surface-depressed: #2c2c2c;
-        --color-surface-item: #2c2c2c;
+        --color-surface-item: #3b3b3b;
         --color-surface-hover: #393939;
     }
 }
@@ -32,7 +32,7 @@
 
 html
 {
-    background-color: var(--color-background);
+    background-color: var(--color-surface);
     color: var(--color-foreground);
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
@@ -43,6 +43,11 @@ html
 body
 {
     padding: 2rem;
+}
+
+body.sectioned
+{
+    background-color: var(--color-background);
 }
 
 h1, 
@@ -68,11 +73,16 @@ header
     margin-bottom: 1rem;
 }
 
-body > section,
-.content-break
+.sectioned > section,
+.sectioned .content-break
 {
     background-color: var(--color-surface);
-    border-radius: .5rem;
+    border-radius: .25rem;
+    padding: 2rem;
+}
+
+.content-break
+{
     padding: 2rem;
 }
 
@@ -250,7 +260,7 @@ input[type=button]:active
 .featured
 {
     text-align: center;
-    border: 1px solid var(--color-surface);
+    border: 1px solid var(--color-foreground-subtle);
     border-radius: .25rem;
     margin: 1rem;
     padding: 1rem;
@@ -263,7 +273,7 @@ input[type=button]:active
     content: none;
 }
 
-body > section,
+body.sectioned > section,
 .content-break
 {
     max-width: 800px;
