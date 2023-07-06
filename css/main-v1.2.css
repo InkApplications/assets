@@ -407,13 +407,28 @@ footer.ink > .signature > a
 }
 body.anchored-footer > footer.ink > .signature
 {
-    background-position: bottom -.6rem left;
+    background-position: bottom -.8rem left;
 }
 @media (prefers-color-scheme: dark) {
     footer.ink > .signature
     {
         background: url("https://assets.inkapplications.com/images/tentacle-dark.svg");
         background-repeat: no-repeat;
+        background-size: 5rem;
+    }
+}
+@media (max-width: 800px) {
+    footer.ink > .signature
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-position: center bottom;
+        padding-bottom: 5.1rem;
+    }
+
+    body.anchored-footer > footer.ink > .signature
+    {
+        background-position: center bottom -.8rem;
     }
 }
 
