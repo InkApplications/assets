@@ -142,7 +142,7 @@ header
     }
     p
     {
-        line-height: 1.3;
+        line-height: 1.4;
         margin: 0;
     }
     h1, h2, h3
@@ -317,9 +317,6 @@ code.grouped
     }
 }
 @media print {
-    code
-    {
-    }
     .hljs,
     code,
     code.grouped > span
@@ -327,6 +324,7 @@ code.grouped
         background: none;
         border: 1px solid var(--color-foreground-subtle);
         border-radius: .25rem;
+        padding: 0 .125rem;
     }
     code.grouped,
     code.grouped > span
